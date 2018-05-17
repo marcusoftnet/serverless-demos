@@ -1,0 +1,1 @@
+The documentation for this demo can be found [here](https://claudiajs.com/tutorials/lambda-api-dynamo-db.html)

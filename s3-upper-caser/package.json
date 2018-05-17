@@ -1,0 +1,24 @@
+{
+  "name": "s3-upper-caser",
+  "version": "1.0.0",
+  "description": "Simple example that shows how to act on S3 events",
+  "main": "index.js",
+  "scripts": {
+    "create": "claudia create --name s3-processing --region us-east-1 --handler main.handler --profile claudia",
+    "deploy": "claudia update --profile claudia",
+    "connectbucket": "claudia add-s3-event-source --bucket upper-caser --prefix in/ --profile claudia",
+    "test": "claudia test-lambda --profile claudia",
+    "lint": "standard",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "keywords": [],
+  "author": "Marcus Hammarberg <marcusoftnet@gmail.com> (http://www.marcusoft.net)",
+  "license": "MIT",
+  "devDependencies": {
+    "claudia": "^4",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.6.4"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "dynamodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "claudia create --region us-east-1 --api-module index --policies policy --profile claudia",
+    "deploy": "claudia update --profile claudia",
+    "lint": "standard",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "keywords": [],
+  "author": "Marcus Hammarberg <marcusoftnet@gmail.com> (http://www.marcusoft.net)",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.238.1",
+    "claudia-api-builder": "^4.0.0",
+    "npm": "^6.0.1"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}

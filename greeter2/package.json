@@ -1,0 +1,20 @@
+{
+  "name": "greeter2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "claudia create --region us-east-1 --api-module index --profile claudia",
+    "deploy": "claudia update --profile claudia"
+  },
+  "keywords": [],
+  "author": "Marcus Hammarberg <marcusoftnet@gmail.com> (http://www.marcusoft.net)",
+  "license": "MIT",
+  "dependencies": {
+    "claudia-api-builder": "^4.0.1",
+    "superb": "^2.0.0"
+  },
+  "devDependencies": {
+    "claudia": "^4.0.0"
+  }
+}
